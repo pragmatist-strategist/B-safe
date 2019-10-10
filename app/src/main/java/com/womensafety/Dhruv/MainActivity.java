@@ -158,10 +158,6 @@ public class MainActivity extends AppCompatActivity
 
                     SQLiteDatabase db2 = this.openOrCreateDatabase("NumberDB", MODE_PRIVATE, null);
 
-
-
-                    Log.d("Number is:", Register.getNumber(db2));
-
                     bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#78C257")));
                     item.setTitle("STOP SERVICE");
 

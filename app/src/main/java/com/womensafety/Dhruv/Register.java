@@ -76,28 +76,28 @@ public class Register extends Fragment implements View.OnClickListener {
     }
 
 
-    public static String getNumber(SQLiteDatabase db2) {
-
-
-        Cursor c = null;
-        String phone_num = "";
-        //db2 = openOrCreateDatabase("NumDB", MODE_PRIVATE, null);
-
-        c = db2.rawQuery("SELECT * FROM details LIMIT 1", null);
-        if (c.getCount() > 0) {
-            //c.moveToFirst();
-
-            while (c.moveToNext()) {
-
-                phone_num += c.getString(1);
-            }
-
-        }
-
-        return phone_num;
-
-
-    }
+//    public static String getNumber(SQLiteDatabase db2) {
+//
+//
+//        Cursor c = null;
+//        String phone_num = "";
+//        //db2 = openOrCreateDatabase("NumDB", MODE_PRIVATE, null);
+//
+//        c = db2.rawQuery("SELECT * FROM details LIMIT 1", null);
+//        if (c.getCount() > 0) {
+//            //c.moveToFirst();
+//
+//            while (c.moveToNext()) {
+//
+//                phone_num += c.getString(1);
+//            }
+//
+//        }
+//
+//        return phone_num;
+//
+//
+//    }
 
 
 }
